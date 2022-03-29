@@ -18,11 +18,11 @@
             <p>Price: {{blog.price}} </p>
             <p>Date: {{blog.date}}</p>
         </div>
-        <br><br>
-        <div>
+        <!-- <br><br> -->
+        <!-- <div>
             <h2>Payment Status</h2>
             <h3 id="status">{{blog.paymentStatus}}</h3>
-        </div>
+        </div> -->
 
 
 
@@ -70,7 +70,8 @@ export default {
             this.submitted = true;
             // console.log(blog.price + typeof(blog.price))
             dataService.writeData(blog.price);
-            
+
+            // updateStatus()
         },
 
         newBlog(){

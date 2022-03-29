@@ -18,11 +18,11 @@
             <p>Date: {{blog.date}}</p>
         </div>
         <!-- <div>Table 1 <br> Status : { } </div> -->
-        <br><br>
-        <div>
+        <!-- <br><br> -->
+        <!-- <div>
             <h2>Payment Status</h2>
             <h3>{{blog.paymentStatus}}</h3>
-        </div>
+        </div> -->
     </div>
     
     
