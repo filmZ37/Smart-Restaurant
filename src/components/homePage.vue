@@ -23,7 +23,7 @@
             <p>Status : {{measure.table3}} </p> 
         </div>
         <div class="flex-block">
-            <img height="300" width="300"  src="../assets/table1.jpg" style="z-index: 1">
+            <img height="300" width="300"  src="../assets/table1.jpg" >
             <p>Table 4</p> 
             <p>Status : {{measure.table4}} </p> 
             
