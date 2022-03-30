@@ -33,7 +33,11 @@
 </template>
 
 <script>
+import application from "../initfirebase";
+import { getDatabase,ref, child, get , onValue,set, } from "firebase/database";
 import dataService from "../services/dataService.js";
+
+const rt = getDatabase(application);
 
 export default {
     data() {
@@ -43,6 +47,7 @@ export default {
                 price : 0,
                 date : Date().slice(0,25),
                 paymentStatus : "Ready",
+                status : 1,
             },
             submitted: false,
         }
@@ -67,11 +72,11 @@ export default {
             };
             if(this.blog.price == 0) return ;
             dataService.create(blog);
+            // console.log('docId',docId,'type',typeof(docId))
             this.submitted = true;
             // console.log(blog.price + typeof(blog.price))
             dataService.writeData(blog.price);
 
-            // updateStatus()
         },
 
         newBlog(){

@@ -34,5 +34,5 @@ const application = initializeApp(firebaseConfig);
 
 
 // console.log(application.options.databaseURL === firebaseConfig.databaseURL );  // true
-console.log('pass init')
+// console.log('pass init')
 export default application ;

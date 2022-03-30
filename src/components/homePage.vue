@@ -54,6 +54,8 @@ import application from "../initfirebase";
 import { getDatabase,ref, child, get , onValue,set, } from "firebase/database";
 import dataService from '../services/dataService';
 
+const rt = getDatabase(application);
+
    export default {
        data(){
            return {
@@ -79,8 +81,6 @@ import dataService from '../services/dataService';
         //    },
 
            readData(){
-               const rt = getDatabase(application);
-               
                //tables
                const table1Ref = ref(rt, 'tables/1');
                onValue(table1Ref, (snapshot) => {
